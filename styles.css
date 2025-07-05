@@ -1,0 +1,47 @@
+/*Se restablecen valores predeterminados de los margenes y rellenos de los elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Primary_color: #84CC16;
+    --Secondary_color: #A3E635;
+    --Tertiary_color: #ECFDF5;
+    --Room_color: #164E1B;
+    --fountain:  "Raleway", sans-serif;
+}
+
+header {
+    background-color: var(--Primary_color);
+    text-align: center;
+}
+
+.titulo{    
+    font-family: var(--fountain);
+    display: inline-block;
+    margin: 10px auto;
+}
+
+nav{
+    background-color: var(--Secondary_color);
+    text-align: center;
+}
+
+nav li{
+    width: 15vw;
+    height: 5vh;
+    background-color: var(--Tertiary_color);
+    margin: 10px auto;
+    padding: 5px;
+    display: inline-block;
+}
+
+section{
+    background-color: var(--Tertiary_color);
+}
+
+footer{
+    background-color: var(--Room_color);
+}
