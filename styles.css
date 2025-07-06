@@ -29,17 +29,71 @@ nav{
     text-align: center;
 }
 
-nav li{
+nav button{
     width: 15vw;
     height: 5vh;
     background-color: var(--Tertiary_color);
     margin: 10px auto;
     padding: 5px;
     display: inline-block;
+    font-family: var(--fountain);
+    font-weight: bold;
 }
 
 section{
     background-color: var(--Tertiary_color);
+}
+
+.content{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.imagenes{
+    display: inline-block;
+    width: 13vw;
+    background-color: var(--Primary_color);
+    border-radius: 5%;
+    padding: 5px;
+    margin: 20px;
+}
+
+.imagenes h1{
+    text-align: center;
+}
+
+.imagenes img{
+    display: inline-block;
+    width: 10vw;
+    height: 30vh;
+}
+
+.imagenes .button{
+    width: 8vw;
+    margin: 0 auto;
+}
+
+.button{
+    background-color: var(--Tertiary_color);
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background-color: #164E1B;
+}
+
+.button--primary{
+    background-color: var(--Room_color);
+    color: var(--Tertiary_color);
+}
+
+.button--primary:hover{
+    background-color: var(--Secondary_color);
+    border-color: var(--Room_color);
 }
 
 footer{
