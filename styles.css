@@ -10,7 +10,7 @@
     --Secondary_color: #A3E635;
     --Tertiary_color: #ECFDF5;
     --Room_color: #164E1B;
-    --fountain:  "Raleway", sans-serif;
+    --fountain:  "lobster Two", sans-serif;
 }
 
 header {
@@ -44,10 +44,6 @@ section{
     background-color: var(--Tertiary_color);
 }
 
-.content{
-    width: 700px;
-    margin: 0 auto;
-}
 
 .imagenes{
     display: inline-block;
@@ -64,11 +60,12 @@ section{
 
 .imagenes img{
     display: inline-block;
-    width: 10vw;
+    width: 30vw;
     height: 30vh;
+    margin: 0 auto;
 }
 
-.imagenes .button{
+.imagenes button{
     width: 8vw;
     margin: 0 auto;
 }
@@ -84,16 +81,19 @@ section{
 
 .button:hover{
     background-color: #164E1B;
+    color: white;
 }
 
 .button--primary{
     background-color: var(--Room_color);
     color: var(--Tertiary_color);
+    transition: 0.2s;
 }
 
 .button--primary:hover{
     background-color: var(--Secondary_color);
-    border-color: var(--Room_color);
+    border: 1px solid var(--Room_color);
+    color: var(--Room_color);
 }
 
 footer{
