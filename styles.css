@@ -10,7 +10,9 @@
     --Secondary_color: #A3E635;
     --Tertiary_color: #ECFDF5;
     --Room_color: #164E1B;
-    --fountain:  "lobster Two", sans-serif;
+    --fountain_primary: "Henny Penny", system-ui;
+    --fountain: "Alata", sans-serif;
+
 }
 
 header {
@@ -18,10 +20,24 @@ header {
     text-align: center;
 }
 
+.logo{
+    width: 40px;
+    position: absolute;
+    left: 50px;
+    margin-top: 30px;
+}
+
 .titulo{    
-    font-family: var(--fountain);
+    font-family: var(--fountain_primary); 
+    font-size: 28px;
     display: inline-block;
-    margin: 10px auto;
+    margin: 15px auto;
+}
+
+.hada{
+    width: 110px;
+    position: absolute;
+    top: 8px;
 }
 
 nav{
@@ -30,58 +46,97 @@ nav{
 }
 
 nav button{
-    width: 15vw;
+    width: 18vw;
     height: 5vh;
     background-color: var(--Tertiary_color);
     margin: 10px auto;
     padding: 5px;
     display: inline-block;
-    font-family: var(--fountain);
     font-weight: bold;
 }
 
 section{
     background-color: var(--Tertiary_color);
+    position: absolute;
+    top: 180px;
+    left: 0;
+    bottom: 65px;
+    right: 0;
 }
 
+.content{
+    text-align: center;
+}
+
+.recomendaciones{
+    font-family: var(--fountain);
+    font-size: 30px;
+    margin: 10px;
+}
 
 .imagenes{
     display: inline-block;
     width: 13vw;
     background-color: var(--Primary_color);
-    border-radius: 5%;
-    padding: 5px;
-    margin: 20px;
+    padding: 4px;
+    margin: 5px auto;
+    text-align: center;
 }
 
 .imagenes h1{
+    margin-top: 8px;
     text-align: center;
+    font-family: var(--fountain);
+    font-size: 18px;
 }
 
 .imagenes img{
     display: inline-block;
-    width: 30vw;
-    height: 30vh;
-    margin: 0 auto;
+    width: 8vw;
+    height: 20vh;
+    margin: 5px auto;
+}
+
+.imagenes p{
+    font-family: var(--fountain);
+    font-size: 10px;
 }
 
 .imagenes button{
-    width: 8vw;
-    margin: 0 auto;
+    width: 80px;
+    height: 30px;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.carrito{
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.bosque{
+    width: 120px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .button{
     background-color: var(--Tertiary_color);
     color: black;
     border: none;
+    border-radius: 2px;
     cursor: pointer;
+    font-family: var(--fountain);
     font-weight: bold;
     transition: 0.5s;
 }
 
 .button:hover{
-    background-color: #164E1B;
-    color: white;
+    background-color: var(--Room_color);
+    color: var(--Secondary_color);
 }
 
 .button--primary{
@@ -98,4 +153,77 @@ section{
 
 footer{
     background-color: var(--Room_color);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.footer_redes{
+    font-family: var(--fountain);
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--Tertiary_color);
+    display: inline-block;
+}
+
+.redes_sociales img{
+    width: 20px;
+    margin: 0 auto;
+    margin: 10px;
+}
+
+@media (max-width:1024px) {
+
+    .logo{
+    width: 40px;
+    position: absolute;
+    left: 20px;
+    margin-top: 30px;
+    }
+
+    .recomendaciones{
+        font-size: 18PX;
+        margin: 10px;
+    }
+
+    .imagenes{
+        display: inline-block;
+        width: 12vw;
+        padding: 5px;
+    }
+
+    .imagenes h1{
+        font-size: 20px;
+    }
+
+    .imagenes img{
+        width: 10vw;
+        height: 15vh;
+    }
+
+    .imagenes p{
+        font-size: 9px;
+    }
+
+    .imagenes button{
+        width: 60px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    nav button{
+        width: 15vw;
+    }
+
+    .button{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-widh: 768px) {
+    
 }
