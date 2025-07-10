@@ -1,266 +1,303 @@
 /*Se restablecen valores predeterminados de los margenes y rellenos de los elementos*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --Primary_color: #84CC16;
-    --Secondary_color: #A3E635;
-    --Tertiary_color: #ECFDF5;
-    --Room_color: #164E1B;
-    --fountain_primary: "Henny Penny", system-ui;
-    --fountain: "Alata", sans-serif;
+/* custom property que define colores de la pagina y tipos de fuente */
+:root {
+  --Primary_color: #84CC16;
+  --Secondary_color: #A3E635;
+  --Tertiary_color: #ECFDF5;
+  --Room_color: #164E1B;
+  --fountain_primary: "Henny Penny", system-ui;
+  --fountain: "Alata", sans-serif;
 }
 
+/* Header de la pagina que contiene menu, titulo y logo de la pagina */
 header {
-    background-color: var(--Primary_color);
-    text-align: center;
+  background-color: var(--Primary_color);
+  text-align: center;
 }
 
-.logo{
-    width: 40px;
-    position: absolute;
-    left: 50px;
-    margin-top: 30px;
+/* Clase que le da estilos a la imagen perfil del usuario en la pagina */
+.header__perfil {
+  width: 40px;
+  position: absolute;
+  left: 50px;
+  margin-top: 30px;
 }
 
-.titulo{    
-    font-family: var(--fountain_primary); 
-    font-size: 28px;
-    display: inline-block;
-    margin: 15px auto;
+/* Clase que le da estilos al titulo principal de la pagina */
+.header__titulo {
+  font-family: var(--fountain_primary);
+  font-size: 28px;
+  display: inline-block;
+  margin: 15px auto;
 }
 
-.hada{
-    width: 110px;
-    position: absolute;
-    top: 8px;
+/* Clase del logo de la pagina  */
+.header__logo {
+  width: 110px;
+  position: absolute;
+  top: 8px;
 }
 
-nav{
-    background-color: var(--Secondary_color);
-    text-align: center;
+/* Menu de navegcion nav */
+nav {
+  background-color: var(--Secondary_color);
+  text-align: center;
 }
 
-nav button{
-    width: 18vw;
-    height: 5vh;
-    background-color: var(--Tertiary_color);
-    margin: 10px auto;
-    padding: 5px;
-    display: inline-block;
-    font-weight: bold;
+/* Icono de menu hamburguesa que no aparece en la pagina normal */
+.menu-icono {
+  display: none;
 }
 
-.section{
-    background-color: var(--Tertiary_color);
-    text-align: center;
-    display: inline-block;
+/* Clase de los botones de navegacion que se encuentran dentro del nav */
+.button__navigation {
+  width: 17.5vw;
+  height: 5vh;
+  margin: 10px auto;
+  padding: 2px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: var(--Room_color);
+  color: var(--Tertiary_color);
+  border: none;
+  transition: 0.2s;
 }
 
-
-.recomendaciones{
-    text-align: center;
-    font-family: var(--fountain);
-    font-size: 30px;
-    margin: 10px;
+/* Clase principal del contenedor principal */
+.section {
+  background-color: var(--Tertiary_color);
+  text-align: center;
+  display: inline-block;
 }
 
-.imagenes{
-    display: inline-block;
-    width: 18vw;
-    height: 45vh;
-    background-color: var(--Primary_color);
-    padding: 4px;
-    margin: 12px 18px;
-    text-align: center;
+/* Clase que le da estilos al titulo de la clase section */
+.section__recomendaciones {
+  font-family: var(--fountain);
+  font-size: 30px;
+  margin: 10px;
 }
 
-.imagenes h1{
-    margin-top: 8px;
-    text-align: center;
-    font-family: var(--fountain);
-    font-size: 18px;
+/* Clase que le da estilos a todas las cajas que se encuentran dentro de la clase section */
+.section__card {
+  display: inline-block;
+  width: 18vw;
+  height: 45vh;
+  background-color: var(--Primary_color);
+  padding: 4px;
+  margin: 12px 18px;
+  text-align: center;
 }
 
-.imagenes img{
-    display: inline-block;
-    width: 8vw;
-    height: 20vh;
-    margin: 5px auto;
+/* Clase que le da estilos a todos los titulos que se encuentran dentro de las card */
+.section__title {
+  margin-top: 8px;
+  font-family: var(--fountain);
+  font-size: 18px;
 }
 
-.imagenes p{
-    font-family: var(--fountain);
-    font-size: 12px;
+/* Clase que le da estilos a todos las imagenes que se encuentran dentro de las card */
+.section__img {
+  display: inline-block;
+  width: 10vw;
+  height: 20vh;
+  margin: 5px auto;
 }
 
-.imagenes button{
-    width: 80px;
-    height: 30px;
-    margin: 20px auto;
-    display: inline-block;
+/* Clase que le da estilos a todos los textos descriptivos que se encuentran dentro de las card */
+.section__text {
+  font-family: var(--fountain);
+  font-size: 16px;
 }
 
-.carrito{
-    width: 30px;
-    position: absolute;
-    top: 200px;
-    left: 50px;
+/* Clase que le da estilos a todos los botones que se encuentran dentro de las card */
+.section__button {
+  width: 80px;
+  height: 30px;
+  margin: 20px auto;
+  display: inline-block;
+  background-color: var(--Tertiary_color);
+  color: black;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: var(--fountain);
+  font-weight: bold;
+  transition: 0.5s;
 }
 
-.button{
-    background-color: var(--Tertiary_color);
-    color: black;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    font-family: var(--fountain);
-    font-weight: bold;
-    transition: 0.5s;
+/* Clase que le da estilos al carrrito de compras de la pagina */
+.section__carrito {
+  width: 30px;
+  position: absolute;
+  top: 250px;
+  left: 40px;
 }
 
-.button:hover{
-    background-color: var(--Room_color);
-    color: var(--Secondary_color);
+/* Pseudoclase que cambia el color de los botones de section  */
+.section__button:hover {
+  background-color: var(--Room_color);
+  color: var(--Secondary_color);
 }
 
-.button--primary{
-    background-color: var(--Room_color);
-    color: var(--Tertiary_color);
-    transition: 0.2s;
+/* Pseudoclase que cambia el color de los botones del menu de navegacion */
+.button--primary:hover {
+  background-color: var(--Secondary_color);
+  border: 1px solid var(--Room_color);
+  color: var(--Room_color);
 }
 
-.button--primary:hover{
-    background-color: var(--Secondary_color);
-    border: 1px solid var(--Room_color);
-    color: var(--Room_color);
+/* Clase que le da estilos al pie de la pagina */
+.footer {
+  background-color: var(--Room_color);
+  text-align: center;
 }
 
-.footer{
-    background-color: var(--Room_color);
-    text-align: center;
-
+/* Clase que le da estilos al texto descriptivo del pie de la pagina */
+.footer__description {
+  font-family: var(--fountain);
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--Tertiary_color);
+  display: inline-block;
 }
 
-.footer_redes{
-    font-family: var(--fountain);
-    font-size: 15px;
-    font-weight: bold;
-    color: var(--Tertiary_color);
-    display: inline-block;
+/* Clase que le da estilos a las imagenes dentro del pie de pagina  */
+.footer__img {
+  width: 20px;
+  margin: 10px auto;
 }
 
-.redes_sociales img{
-    width: 20px;
-    margin: 0 auto;
-    margin: 10px;
-}
-
+/* Media queri para pantallas pequeñas  */
 @media (max-width:1024px) {
 
-    .logo{
-        width: 30px;
-        left: 20px;
-        margin-top: 30px;
-    }
+  .header__perfil {
+    width: 30px;
+    left: 20px;
+    margin-top: 30px;
+  }
 
-    nav button{
-        width: 15vw;
-    }
+  .button__navigation {
+    width: 15vw;
+  }
 
-    .recomendaciones{
-        font-size: 18PX;
-        margin: 10px;
-    }
+  .section__recomendaciones {
+    font-size: 18PX;
+    margin: 10px;
+  }
 
-    .imagenes{
-        display: inline-block;
-        width: 16vw;
-        padding: 5px;
-    }
+  .section__card {
+    display: inline-block;
+    padding: 3px;
+  }
 
-    .imagenes h1{
-        font-size: 20px;
-    }
+  .section__title {
+    font-size: 20px;
+  }
 
-    .imagenes img{
-        width: 10vw;
-        height: 15vh;
-    }
+  .section__img {
+    width: 10vw;
+    height: 15vh;
+  }
 
-    .imagenes p{
-        font-size: 11px;
-    }
+  .section__text {
+    font-size: 11px;
+  }
 
-    .imagenes button{
-        width: 60px;
-        height: 20px;
-        font-size: 10px;
-    }
+  .section__button {
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+  }
 
-    .carrito{
-        left: 30px;
-    }
+  .section__carrito {
+    left: 30px;
+  }
 
-    .button{
-        font-size: 13px;
-    }
+  .section__button {
+    font-size: 13px;
+  }
 
 }
 
+/* Media queri para tablets */
 @media (max-width: 992px) {
-    
-    .titulo {
-        font-size: 20px ;
-    }
 
-    .hada{
-        width: 90px;
-    }
+  .header__titulo {
+    font-size: 20px;
+  }
 
-    nav button{
-        width: 15vw;
-    }
+  .header__logo {
+    width: 90px;
+  }
 
-    .imagenes{
-        width: 23vw ;
-        margin: 20px;
-    }
+  .button__navigation {
+    width: 18vw;
+  }
 
-    .imagenes p{
-        font-size: 12px;
-    }
+  .section__card {
+    width: 23vw;
+    margin: 20px;
+  }
 
-    .button{
-        font-size: 9px;
-    }
+  .section__text {
+    font-size: 12px;
+  }
+
+  .section__button {
+    font-size: 14px;
+  }
 }
 
-@media (max-width: 768px ) {
+/* Media queri para dispositivos mobiles grandes  */
+@media (max-width: 768px) {
+  .header__titulo {
+    font-size: 15px;
+  }
 
-    .titulo{
-        font-size: 15px;
-    }
+  .header__logo {
+    width: 70px;
+  }
 
-    .hada{
-        width: 70px;
-    }
+  nav {
+    display: inline-block;
+    width: 100%;
+  }
 
-     nav  button:nth-child(1),
-     nav  button:nth-child(2)
-     {
-        display: none;
-    }
+  .button__navigation:nth-child(1),
+  .button__navigation:nth-child(2),
+  .button__navigation:nth-child(3),
+  .button__navigation:nth-child(4),
+  .button__navigation:nth-child(5) {
+    display: none;
+  }
 
-    .imagenes{
-        width: 27vw;
-    }
+  .menu-icono {
+    display: block;
+    font-size: 28px;
+    color: black;
+    margin: 10px;
+    cursor: pointer;
+  }
 
-    .carrito{
-        top: 110px;
-    }
+  .section__card {
+    width: 200px;
+    height: 350px;
+    margin: 10px 90px;
+  }
+
+  .section__img {
+    width: 90px;
+  }
+
+  .section__carrito {
+    top: 90px;
+  }
 
 }
